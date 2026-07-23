@@ -118,10 +118,17 @@ export default function Home() {
 
         <nav aria-label="Main navigation">
           <a href="#features">Features</a>
-          <a href={FREE_PLAY_URL}>How to play</a>
+          <a href={FREE_PLAY_URL} data-track-cta data-cta-location="navigation">
+            How to play
+          </a>
         </nav>
 
-        <a className="header-cta" href={FREE_PLAY_URL}>
+        <a
+          className="header-cta"
+          href={FREE_PLAY_URL}
+          data-track-cta
+          data-cta-location="header"
+        >
           Play Free
           <ArrowIcon />
         </a>
@@ -145,7 +152,12 @@ export default function Home() {
           </p>
 
           <div className="hero-actions">
-            <a className="primary-cta" href={FREE_PLAY_URL}>
+            <a
+              className="primary-cta"
+              href={FREE_PLAY_URL}
+              data-track-cta
+              data-cta-location="hero"
+            >
               <span className="cta-die">⚄</span>
               Play Free
               <ArrowIcon />
@@ -218,7 +230,12 @@ export default function Home() {
           <h2>Bring everyone together for one more game.</h2>
           <p>Open LudoWin on your phone and start a classic local match.</p>
         </div>
-        <a className="primary-cta light" href={FREE_PLAY_URL}>
+        <a
+          className="primary-cta light"
+          href={FREE_PLAY_URL}
+          data-track-cta
+          data-cta-location="final"
+        >
           Play Free
           <ArrowIcon />
         </a>
@@ -242,7 +259,12 @@ export default function Home() {
         </div>
       </footer>
 
-      <a className="mobile-cta" href={FREE_PLAY_URL}>
+      <a
+        className="mobile-cta"
+        href={FREE_PLAY_URL}
+        data-track-cta
+        data-cta-location="mobile"
+      >
         <span>⚄</span>
         Play Free
         <ArrowIcon />

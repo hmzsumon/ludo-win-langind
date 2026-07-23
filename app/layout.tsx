@@ -1,3 +1,5 @@
+import LandingTracker from "@/components/marketing/landing-tracker";
+import MetaPixel from "@/components/marketing/meta-pixel";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
@@ -34,7 +36,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MetaPixel />
+        <LandingTracker />
+        {children}
+      </body>
     </html>
   );
 }
