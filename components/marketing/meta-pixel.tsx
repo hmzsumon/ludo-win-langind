@@ -3,7 +3,7 @@ import Script from "next/script";
 /* ────────── Meta Pixel configuration ────────── */
 
 const META_PIXEL_ID =
-  process.env.NEXT_PUBLIC_META_PIXEL_ID || "1721680429146841";
+  process.env.NEXT_PUBLIC_META_PIXEL_ID || "1012738528422953";
 
 export default function MetaPixel(): JSX.Element {
   return (
