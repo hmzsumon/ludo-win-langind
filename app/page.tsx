@@ -2,77 +2,77 @@
 
 const APK_URL = "/downloads/LudoWin-latest.apk";
 const MAIN_SITE_URL = "https://www.ludowin365.com";
-const SUPPORT_URL = "https://t.me/ludowin365";
+const SUPPORT_URL = "https://tawk.to/chat/6a6e79ca74030a1d4226283f/1juvong0b";
 
 const screenshots = [
   {
     src: "/app/ludowin-screen-1.webp",
     width: 720,
     height: 1080,
-    alt: "LudoWin Classic ও Master মোডের বাংলা প্রচ্ছদ",
+    alt: "LudoWin Classic and Master game modes",
   },
   {
     src: "/app/ludowin-screen-2.webp",
     width: 720,
     height: 1080,
-    alt: "LudoWin মোবাইল অ্যাপ ও গেম ফিচারের প্রচ্ছদ",
+    alt: "LudoWin mobile app and game features",
   },
   {
     src: "/app/ludowin-screen-3.webp",
     width: 720,
     height: 1080,
-    alt: "LudoWin মোবাইল গেম অভিজ্ঞতার বাংলা প্রচ্ছদ",
+    alt: "LudoWin mobile Ludo gameplay",
   },
 ];
 
 const features = [
   {
     icon: "🎲",
-    title: "Classic ও Master",
-    text: "পরিচিত Classic নিয়ম অথবা দ্রুতগতির Master মোড থেকে নিজের পছন্দ বেছে নিন।",
+    title: "Classic & Master",
+    text: "Choose between familiar Classic rules and the faster-paced Master mode.",
   },
   {
     icon: "🌐",
-    title: "অনলাইন খেলা",
-    text: "ইন্টারনেট সংযোগে অন্য খেলোয়াড়ের সঙ্গে দ্রুত ম্যাচ খুঁজে খেলা শুরু করুন।",
+    title: "Online Play",
+    text: "Find another player online and start a match in moments.",
   },
   {
     icon: "📴",
-    title: "অফলাইন সুবিধা",
-    text: "ইন্টারনেট না থাকলেও স্থানীয় অফলাইন মোডে লুডু উপভোগ করুন।",
+    title: "Offline Play",
+    text: "Enjoy Ludo in local offline mode even without an internet connection.",
   },
   {
     icon: "👥",
-    title: "সহজ ২-প্লেয়ার অভিজ্ঞতা",
-    text: "পরিষ্কার কন্ট্রোল ও মোবাইল-উপযোগী বোর্ডে দুই খেলোয়াড়ের ম্যাচ খেলুন।",
+    title: "Simple 2-Player Matches",
+    text: "Play two-player matches with clear controls and a mobile-friendly board.",
   },
   {
     icon: "🔔",
-    title: "আপডেট ও নোটিফিকেশন",
-    text: "অ্যাকাউন্ট ও গেমের গুরুত্বপূর্ণ আপডেট এক জায়গায় দেখুন।",
+    title: "Updates & Notifications",
+    text: "See important account and game updates in one place.",
   },
   {
     icon: "🛟",
-    title: "সহায়তা পাওয়া সহজ",
-    text: "কোনো প্রশ্ন বা সমস্যায় সাপোর্ট চ্যানেলে দ্রুত যোগাযোগ করুন।",
+    title: "Easy Support",
+    text: "Contact our support team quickly whenever you have a question or issue.",
   },
 ];
 
 const installSteps = [
   {
-    number: "১",
-    title: "APK ডাউনলোড করুন",
-    text: "“দ্রুত ইনস্টল” চাপলে ৪.০ MB-এর LudoWin APK সরাসরি ডাউনলোড হবে।",
+    number: "1",
+    title: "Download the APK",
+    text: "Tap “Quick Install” to download the 4.0 MB LudoWin APK directly.",
   },
   {
-    number: "২",
-    title: "ডাউনলোড ফাইল খুলুন",
-    text: "ব্রাউজারের Downloads অথবা ফোনের Files অ্যাপ থেকে LudoWin-latest.apk খুলুন।",
+    number: "2",
+    title: "Open the Downloaded File",
+    text: "Open LudoWin-latest.apk from your browser downloads or your phone's Files app.",
   },
   {
-    number: "৩",
-    title: "Install চাপুন",
-    text: "ফোন অনুমতি চাইলে এই ব্রাউজারের জন্য একবার “Install unknown apps” অনুমতি দিয়ে Install করুন।",
+    number: "3",
+    title: "Tap Install",
+    text: "If prompted, allow “Install unknown apps” for this browser once, then tap Install.",
   },
 ];
 
@@ -95,8 +95,8 @@ function DownloadButton({
         ↓
       </span>
       <span>
-        <strong>দ্রুত ইনস্টল</strong>
-        <small>Android APK · ৪.০ MB</small>
+        <strong>Quick Install</strong>
+        <small>Android APK · 4.0 MB</small>
       </span>
     </a>
   );
@@ -113,7 +113,7 @@ function MainSiteButton() {
       data-cta-location="main-site"
     >
       <span aria-hidden="true">🌐</span>
-      মেইন সাইটে যান
+      Visit Main Site
       <span className="arrow" aria-hidden="true">
         ↗
       </span>
@@ -132,7 +132,7 @@ function SectionTitle({
     <div className="section-title">
       <h2>{children}</h2>
       {href ? (
-        <a href={href} aria-label={`${children} বিস্তারিত দেখুন`}>
+        <a href={href} aria-label={`View ${children} details`}>
           →
         </a>
       ) : (
@@ -147,7 +147,7 @@ export default function Home() {
     <main>
       <div className="page-shell">
         <header className="topbar">
-          <a className="mini-brand" href="#top" aria-label="LudoWin হোম">
+          <a className="mini-brand" href="#top" aria-label="LudoWin home">
             <img src="/app/ludowin-icon.webp" width="42" height="42" alt="" />
             <span>
               <strong>LudoWin</strong>
@@ -160,7 +160,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            সহায়তা
+            Help
           </a>
         </header>
 
@@ -171,30 +171,30 @@ export default function Home() {
               src="/app/ludowin-icon.webp"
               width="112"
               height="112"
-              alt="LudoWin অ্যাপ আইকন"
+              alt="LudoWin app icon"
             />
             <div>
-              <p className="eyebrow">অফিশিয়াল অ্যান্ড্রয়েড অ্যাপ</p>
+              <p className="eyebrow">Official Android App</p>
               <h1>LudoWin</h1>
               <a href={MAIN_SITE_URL} target="_blank" rel="noopener noreferrer">
                 LUDOWIN365
               </a>
-              <span className="verified-badge">✓ সরাসরি ডাউনলোড</span>
+              <span className="verified-badge">✓ Direct Download</span>
             </div>
           </div>
 
-          <div className="app-facts" aria-label="অ্যাপের তথ্য">
+          <div className="app-facts" aria-label="App information">
             <div>
               <strong>Android</strong>
-              <span>প্ল্যাটফর্ম</span>
+              <span>Platform</span>
             </div>
             <div>
-              <strong>৪.০ MB</strong>
-              <span>APK সাইজ</span>
+              <strong>4.0 MB</strong>
+              <span>APK Size</span>
             </div>
             <div>
-              <strong>১৮+</strong>
-              <span>বয়সসীমা</span>
+              <strong>18+</strong>
+              <span>Age Rating</span>
             </div>
           </div>
 
@@ -204,18 +204,18 @@ export default function Home() {
           </div>
 
           <p className="download-help">
-            ডাউনলোড শুরু না হলে{" "}
+            If the download does not start,{" "}
             <a href={APK_URL} download="LudoWin-latest.apk">
-              এখানে আবার চাপুন
+              tap here to try again
             </a>
-            । Android নিরাপত্তার কারণে প্রথমবার একটি অনুমতি চাইতে পারে।
+            . Android may request permission the first time for security.
           </p>
         </section>
 
         <section className="screens-section" aria-labelledby="screens-title">
           <div className="section-title" id="screens-title">
-            <h2>অ্যাপটি এক নজরে</h2>
-            <span className="swipe-hint">স্ক্রল করুন →</span>
+            <h2>App at a Glance</h2>
+            <span className="swipe-hint">Scroll →</span>
           </div>
           <div className="screens-rail">
             {screenshots.map((screenshot, index) => (
@@ -236,12 +236,12 @@ export default function Home() {
         </section>
 
         <section className="content-section" id="about">
-          <SectionTitle>এই অ্যাপ সম্পর্কে</SectionTitle>
+          <SectionTitle>About This App</SectionTitle>
           <p className="lead-copy">
-            LudoWin হলো মোবাইলের জন্য তৈরি একটি রঙিন ও সহজ লুডু অভিজ্ঞতা।
-            Classic ও Master—দুটি আলাদা মোডে অনলাইন প্রতিপক্ষের সঙ্গে অথবা
-            অফলাইনে খেলা যায়। দ্রুত ম্যাচ, পরিচিত নিয়ম, পরিষ্কার কন্ট্রোল এবং
-            সহজ সাপোর্ট—সবকিছু এক অ্যাপে পাওয়া যাবে।
+            LudoWin is a colourful and easy-to-use Ludo experience designed for
+            mobile. Play online against another player or enjoy offline play in
+            two distinct modes—Classic and Master. Fast matches, familiar rules,
+            clear controls, and easy support are all available in one app.
           </p>
 
           <div className="feature-list">
@@ -258,20 +258,21 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="chips" aria-label="অ্যাপের বিভাগ">
-            <span>বোর্ড গেম</span>
-            <span>লুডু</span>
-            <span>অনলাইন</span>
-            <span>অফলাইন</span>
-            <span>মোবাইল গেম</span>
+          <div className="chips" aria-label="App categories">
+            <span>Board Game</span>
+            <span>Ludo</span>
+            <span>Online</span>
+            <span>Offline</span>
+            <span>Mobile Game</span>
           </div>
         </section>
 
         <section className="content-section install-section" id="install-guide">
-          <SectionTitle>সহজ ইনস্টলেশন</SectionTitle>
+          <SectionTitle>Easy Installation</SectionTitle>
           <p className="section-intro">
-            Play Store-এর বাইরে APK ইনস্টল করার সময় Android যে নিরাপত্তা ধাপ
-            দেখায়, নিচের নিয়ম অনুসরণ করলে কয়েক মিনিটেই শেষ হবে।
+            Android shows a few security steps when you install an APK from
+            outside the Play Store. Follow the instructions below to finish in
+            just a few minutes.
           </p>
           <div className="install-steps">
             {installSteps.map((step) => (
@@ -287,52 +288,54 @@ export default function Home() {
           <div className="install-note">
             <span aria-hidden="true">🛡️</span>
             <p>
-              <strong>নিরাপত্তা টিপ:</strong> শুধু এই অফিসিয়াল পেজ থেকে APK
-              ডাউনলোড করুন। ইনস্টল শেষে চাইলে “Install unknown apps” অনুমতি আবার
-              বন্ধ করে দিতে পারেন।
+              <strong>Security Tip:</strong> Download the APK only from this
+              official page. After installation, you can turn off the “Install
+              unknown apps” permission again.
             </p>
           </div>
         </section>
 
         <section className="content-section safety-section" id="safety">
-          <SectionTitle>অ্যাকাউন্ট ও নিরাপত্তা</SectionTitle>
+          <SectionTitle>Account & Security</SectionTitle>
           <p className="section-intro">
-            অ্যাকাউন্ট তৈরি ও পুনরুদ্ধারে মোবাইল বা ইমেইল যাচাইয়ের ব্যবস্থা আছে।
-            অ্যাপের আপডেট, নোটিফিকেশন ও প্রোফাইল তথ্য এক জায়গা থেকে দেখা যায়।
+            Mobile or email verification helps protect account creation and
+            recovery. View app updates, notifications, and profile information
+            in one place.
           </p>
           <div className="safety-card">
             <div>
               <span aria-hidden="true">✓</span>
               <p>
-                <strong>OTP যাচাই</strong>
-                বাংলাদেশি মোবাইল নম্বর এবং প্রয়োজন অনুযায়ী ইমেইল যাচাই।
+                <strong>OTP Verification</strong>
+                Verify a Bangladesh mobile number or email address when needed.
               </p>
             </div>
             <div>
               <span aria-hidden="true">✓</span>
               <p>
-                <strong>নিজস্ব প্রোফাইল</strong>
-                অ্যাকাউন্ট, নোটিফিকেশন ও গেম-সংক্রান্ত তথ্য সহজে দেখুন।
+                <strong>Personal Profile</strong>
+                Easily view your account, notifications, and game information.
               </p>
             </div>
             <div>
               <span aria-hidden="true">✓</span>
               <p>
-                <strong>সাপোর্ট</strong>
-                কোনো সমস্যায় অফিসিয়াল সাপোর্ট চ্যানেলে যোগাযোগ করুন।
+                <strong>Support</strong>
+                Contact the official support team whenever you need help.
               </p>
             </div>
           </div>
         </section>
 
         <section className="content-section responsible-section">
-          <SectionTitle>দায়িত্বশীল ব্যবহার</SectionTitle>
+          <SectionTitle>Responsible Use</SectionTitle>
           <div className="responsible-card">
-            <span className="age-badge">১৮+</span>
+            <span className="age-badge">18+</span>
             <p>
-              LudoWin প্রাপ্তবয়স্কদের বিনোদনের জন্য। অ্যাপের কিছু অংশে ভার্চুয়াল
-              ডায়মন্ড ও ঐচ্ছিক লেনদেন থাকতে পারে। কোনো ফলাফল বা পুরস্কার নিশ্চিত
-              নয়। ব্যবহারের আগে প্রযোজ্য শর্ত এবং স্থানীয় আইন যাচাই করুন।
+              LudoWin is intended for adult entertainment. Some parts of the app
+              may include virtual diamonds and optional transactions. No result
+              or reward is guaranteed. Review the applicable terms and local
+              laws before use.
             </p>
           </div>
         </section>
@@ -340,8 +343,8 @@ export default function Home() {
         <section className="final-download">
           <img src="/app/ludowin-icon.webp" width="80" height="80" alt="" />
           <div>
-            <p>খেলার জন্য প্রস্তুত?</p>
-            <h2>এখনই LudoWin ইনস্টল করুন</h2>
+            <p>Ready to Play?</p>
+            <h2>Install LudoWin Now</h2>
           </div>
           <DownloadButton className="final-install-button" location="footer" />
           <MainSiteButton />
@@ -350,31 +353,31 @@ export default function Home() {
         <footer>
           <div>
             <strong>LudoWin</strong>
-            <span>Android-এর জন্য Classic ও Master লুডু</span>
+            <span>Classic & Master Ludo for Android</span>
           </div>
-          <nav aria-label="ফুটার লিংক">
-            <a href="#about">অ্যাপ সম্পর্কে</a>
-            <a href="#install-guide">ইনস্টল গাইড</a>
-            <a href="#safety">নিরাপত্তা</a>
+          <nav aria-label="Footer links">
+            <a href="#about">About the App</a>
+            <a href="#install-guide">Install Guide</a>
+            <a href="#safety">Security</a>
             <a href={SUPPORT_URL} target="_blank" rel="noopener noreferrer">
-              সাপোর্ট
+              Support
             </a>
           </nav>
-          <p>© ২০২৬ LudoWin · সর্বস্বত্ব সংরক্ষিত</p>
+          <p>© 2026 LudoWin · All rights reserved</p>
         </footer>
       </div>
 
       <div className="mobile-download-bar">
         <div>
           <strong>LudoWin</strong>
-          <span>Android · ৪.০ MB</span>
+          <span>Android · 4.0 MB</span>
         </div>
         <a
           href={APK_URL}
           download="LudoWin-latest.apk"
           type="application/vnd.android.package-archive"
         >
-          ইনস্টল
+          Install
         </a>
       </div>
     </main>
